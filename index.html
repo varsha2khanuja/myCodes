@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<body>
+
+<div class="container login-form">
+	<h2 class="login-title">- Please Login -</h2>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<form>
+				<div class="input-group login-userinput">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+					<input id="txtUser" type="text" class="form-control" name="username" placeholder="Username">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+					<input  id="txtPassword" type="password" class="form-control" name="password" placeholder="Password">
+					<span id="showPassword" class="input-group-btn">
+            <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+          </span>  
+				</div>
+				<button class="btn btn-primary btn-block login-button" type="submit"><i class="fa fa-sign-in"></i> Login</button>
+				<div class="checkbox login-options">
+					<label><input type="checkbox"/> Remember Me</label>
+					<a href="register.html" class="login-forgot">Register</a>
+				</div>		
+			</form>			
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

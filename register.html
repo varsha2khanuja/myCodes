@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="form-box">
+        <h1>Form <span>Registration</span></h1>
+            <form role="form" id="register-form" action="http://localhost/booking/api/?type=register">
+            <!-- name field -->
+                <div class="form-group">
+                <div id="nameError" class="sr-only" role="alert"></div>
+                <label for="form-name-field" class="sr-only">Name</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input type="text" class="form-control name" id="form-name-field" value="" placeholder="Name" name="name" required>
+                    </div>
+                </div>
+            <!-- email field -->
+                <div class="form-group">
+                <div id="emailError" class="sr-only"" role="alert"></div>
+                <label for="form-email-field" class="sr-only">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <input type="email" class="form-control email" id="form-email-field" value="" placeholder="Email" name="email" required>
+                    </div>
+                </div>
+            <!-- phone field -->
+                <div class="form-group">
+                <div id="phoneError" class="sr-only"" role="alert"></div>
+                <label for="form-phone-field" class="sr-only">Password</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                        <input type="password" class="form-control password" id="form-phone-field" value="" placeholder="Password" name="password" required>
+                    </div>
+                </div>
+           
+            <button type="submit" class="btn btn-default">Submit</button>
+            </form>   
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
